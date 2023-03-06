@@ -132,7 +132,7 @@
           });
       };
 
-      const createCard = (data) => {
+      const createCard = (data, nickname) => {
         const mainBody = document.getElementById("card-grid");
         // ---------
         // Keys
@@ -144,7 +144,15 @@
         // Type Description
 
         // Name
-        const name = data["name"];
+        var name;
+        if(nickname){
+          console.log("New nickname: "+nickname);
+          name = nickname;
+        }else{
+          console.log("No Nickname");
+          name = data["name"];
+        }
+        
         const cellTitleText = myUpperCase(name);
         console.log(cellTitleText);
         // Moves List
@@ -263,9 +271,15 @@
       };
 
       function getPokemon() {
+        // Get Pokemon name
         let pokemon = document.getElementById("pokemonName").value;
+
         // console.log("New pokemon name: ");
+        // concatenate pokemon name to api
         let newPokemonCall = pokemonAPInew + pokemon.toLowerCase();
+
+        // Get optional name
+        let nickname = document.getElementById("NcikName").value
         console.log(newPokemonCall);
         fetch(newPokemonCall)
           .then((response) => {
@@ -281,7 +295,7 @@
             //     createCard(items)
             // }
 
-            createCard(data);
+            createCard(data,nickname);
           })
           .catch((error) => {
             console.log(error);
