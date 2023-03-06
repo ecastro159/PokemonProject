@@ -1,6 +1,6 @@
 # Simple Pokemon Project
 
-### This Project is meant to experiment and learn how to use [Bootstrap 5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+### This Project was created to help learn how to use [Bootstrap 5](https://getbootstrap.com/docs/5.3/getting-started/introduction/) and to experiment with it
 
 #### **Objective**
 To create a simple webpage in which you can create your own pokemon team
@@ -10,4 +10,4 @@ Each pokemon will have the following:
  - Move list
    - Randomly select 4 from pokemon move pool
 
-All pokemon information is provided by [pokemonapi](https://pokeapi.co/about) 
+All pokemon information is provided by [pokemonapi](https://pokeapi.co) 
