@@ -1,6 +1,6 @@
 # Simple Pokemon Project
 
-### This Project is meant to experiment and learn how to learn [Bootstrap 5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+### This Project is meant to experiment and learn how to use [Bootstrap 5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 #### **Objective**
 To create a simple webpage in which you can create your own pokemon team
