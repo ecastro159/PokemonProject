@@ -214,10 +214,7 @@
           for (moves of cellMoveList) {
             // Move Name
             const move = moves["move"]["name"];
-            // Move description
-            // const moveDescription = moveInfo(move);
 
-            // console.log("Print: " + moveAbb);
             // --------< li>
             const li = document.createElement("li");
             li.className = "list-group-item";
@@ -226,9 +223,9 @@
             // -------- <abb>
             const abbr = document.createElement("abbr");
             // Move Description HERE
-            // const moveAbb = moveInfo(moves)
+            const moveAbb = moveInfo(moves)
             // console.log(moveAbb);
-            abbr.title = "Placeholder";
+            abbr.title = moveAbb;
 
             // abbr.appendChild()
             abbr.appendChild(cellText);
